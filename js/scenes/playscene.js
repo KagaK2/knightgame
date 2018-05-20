@@ -8,7 +8,6 @@ class PlayScene extends Phaser.Scene {
       this.Velo = -150;  
     }
     create () {
-        console.log('PlayScene create');
         //add background
         this.background = this.add.tileSprite(400,300,800,600,'background');
         //bottom platform
@@ -23,7 +22,7 @@ class PlayScene extends Phaser.Scene {
         this.anims.create({
             key: 'right',
             frames: this.anims.generateFrameNumbers('dude', { start: 1, end: 4 }),
-            frameRate: 5,
+            frameRate: 7,
             repeat: -1
         });
 
